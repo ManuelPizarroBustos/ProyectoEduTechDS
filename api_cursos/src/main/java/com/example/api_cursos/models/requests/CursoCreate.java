@@ -6,8 +6,17 @@ import lombok.Data;
 public class CursoCreate {
     
     @NotBlank
+    private int id;
+
+    @NotBlank
     private String titulo;
     
     @NotBlank
     private String descripcion;
+
+    @NotBlank
+    private String categoria;
+
+    @NotBlank
+    private Integer idInstructor;   
 }

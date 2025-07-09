@@ -14,12 +14,15 @@ public class Inscripcion {
     private int id;
 
     @Column(nullable = false)
-    private String usuarioId;
+    private Integer usuarioId;
 
     @Column(nullable = false,unique = true)
-    private String cursoId;
+    private Integer cursoId;
 
     @Column(nullable = false)
     private String estado;
+
+    @Column(nullable = false)
+    private String fechaInscripcion;
 }
     

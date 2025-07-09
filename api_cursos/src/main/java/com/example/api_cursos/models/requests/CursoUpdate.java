@@ -8,4 +8,6 @@ public class CursoUpdate {
 
     private String titulo;
     private String descripcion;
+    private String categoria;
+    private Integer idInstructor;
 }

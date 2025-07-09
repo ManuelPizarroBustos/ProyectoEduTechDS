@@ -29,13 +29,16 @@ public class InscripcionService{
     public Inscripcion registrar(InscripcionCreate inscripcion){
         try {
             Inscripcion nuevaInscripcion = new Inscripcion();
+            nuevaInscripcion.setId(inscripcion.getId());
             nuevaInscripcion.setUsuarioId(inscripcion.getUsuarioId());
             nuevaInscripcion.setCursoId(inscripcion.getCursoId());
             nuevaInscripcion.setEstado(inscripcion.getEstado());
+            nuevaInscripcion.setFechaInscripcion(inscripcion.getFechaInscripcion());
+            
 
             return inscripcionRepository.save(nuevaInscripcion);
         } catch (Exception e) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Inscripcion Registrada");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Inscripcion no Registrada");
         }
     }
 
@@ -51,6 +54,12 @@ public class InscripcionService{
         
         if(body.getCursoId() != null) {
             inscripcion.setCursoId(body.getCursoId());
+        }
+        if(body.getEstado() != null) {
+            inscripcion.setEstado(body.getEstado());
+        }
+        if(body.getFechaInscripcion() != null) {
+            inscripcion.setFechaInscripcion(body.getFechaInscripcion());
         }
 
         return inscripcionRepository.save(inscripcion);

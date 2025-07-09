@@ -29,8 +29,11 @@ public class CursoService{
     public Curso registrar(CursoCreate curso){
         try {
             Curso nuevoCurso = new Curso();
+            nuevoCurso.setId(curso.getId());
             nuevoCurso.setTitulo(curso.getTitulo());
             nuevoCurso.setDescripcion(curso.getDescripcion());
+            nuevoCurso.setCategoria(curso.getCategoria());
+            nuevoCurso.setIdInstructor(curso.getIdInstructor());
 
             return cursoRepository.save(nuevoCurso);
         } catch (Exception e) {
@@ -50,6 +53,14 @@ public class CursoService{
         
         if(body.getDescripcion() != null) {
             curso.setDescripcion(body.getDescripcion());
+        }
+
+        if(body.getCategoria() != null) {
+            curso.setCategoria(body.getCategoria());
+        }
+
+        if(body.getIdInstructor() != null) {
+            curso.setIdInstructor(body.getIdInstructor());
         }
 
         return cursoRepository.save(curso);

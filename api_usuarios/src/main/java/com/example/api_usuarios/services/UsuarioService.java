@@ -39,6 +39,7 @@ public class UsuarioService{
             nuevoUsuario.setEmail(usuario.getEmail());
             nuevoUsuario.setTelefono(usuario.getTelefono());
             nuevoUsuario.setPassword(usuario.getPassword());
+            nuevoUsuario.setRol(usuario.getRol());// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR
 
             return usuarioRepository.save(nuevoUsuario);
         } catch (Exception e) {
@@ -66,6 +67,10 @@ public class UsuarioService{
 
         if(body.getPassword() != null) {
             usuario.setPassword(body.getPassword());
+        }
+        
+        if(body.getRol() != null) {
+            usuario.setRol(body.getRol());
         }
     
         return usuarioRepository.save(usuario);

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.*;
 import lombok.*;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Data
@@ -26,8 +25,10 @@ public class Usuario {
     @Column(nullable = false)
     private String telefono;
     
-    @JsonIgnore
     @Column(nullable = false)
     private String password;
+
+    @Column(nullable = false)
+    private String rol;// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR
 }
     

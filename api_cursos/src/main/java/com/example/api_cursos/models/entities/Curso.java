@@ -17,4 +17,10 @@ public class Curso {
 
     @Column(nullable = false)
     private String descripcion;
+
+    @Column(nullable = false)
+    private String categoria;
+
+    @Column(nullable = false)
+    private Integer idInstructor;
 }

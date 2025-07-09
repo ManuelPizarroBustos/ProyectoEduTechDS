@@ -6,11 +6,17 @@ import lombok.Data;
 public class InscripcionCreate {
     
     @NotBlank
-    private String usuarioId;
+    private int id;
+
+    @NotBlank
+    private Integer usuarioId;
     
     @NotBlank
-    private String cursoId;
+    private Integer cursoId;
 
     @NotBlank
     private String estado;
+
+    @NotBlank
+    private String fechaInscripcion;
 }
