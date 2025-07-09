@@ -66,7 +66,7 @@ public class RolService{
         if (rol == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Rol no encontrado");
         }
-        usuarioRepository.delete(rol);
+        rolRepository.delete(rol);
     
     }
     
