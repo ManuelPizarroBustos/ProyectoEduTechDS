@@ -23,5 +23,5 @@ public class UsuarioCreate {
     private String password;        
 
     @NotBlank
-    private String rol; // Puede ser "admin" o "user"
+    private Integer idRol; 
 }

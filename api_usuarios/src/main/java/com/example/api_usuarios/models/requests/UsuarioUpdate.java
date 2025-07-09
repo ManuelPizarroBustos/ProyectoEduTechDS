@@ -9,5 +9,5 @@ public class UsuarioUpdate {
     private String email;
     private String telefono;
     private String password;
-    private String rol; // Puede ser "admin" o "user"
+    private Integer idRol; 
 }

@@ -1,8 +1,6 @@
 package com.example.api_usuarios.models.entities;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,6 +27,6 @@ public class Usuario {
     private String password;
 
     @Column(nullable = false)
-    private String rol;// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR
+    private Integer idRol;// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR, GERENTE
 }
     

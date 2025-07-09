@@ -39,7 +39,7 @@ public class UsuarioService{
             nuevoUsuario.setEmail(usuario.getEmail());
             nuevoUsuario.setTelefono(usuario.getTelefono());
             nuevoUsuario.setPassword(usuario.getPassword());
-            nuevoUsuario.setRol(usuario.getRol());// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR
+            nuevoUsuario.setIdRol(usuario.getIdRol());// ejemplo: ADMIN, ESTUDIANTE, INSTRUCTOR, GERENTE
 
             return usuarioRepository.save(nuevoUsuario);
         } catch (Exception e) {
@@ -69,8 +69,8 @@ public class UsuarioService{
             usuario.setPassword(body.getPassword());
         }
         
-        if(body.getRol() != null) {
-            usuario.setRol(body.getRol());
+        if(body.getIdRol() != null) {
+            usuario.setIdRol(body.getIdRol());
         }
     
         return usuarioRepository.save(usuario);

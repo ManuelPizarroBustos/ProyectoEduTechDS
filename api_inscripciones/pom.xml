@@ -10,9 +10,9 @@
    	</parent>
 
   	<groupId>com.example</groupId>
-  	<artifactId>api_usuarios</artifactId>
+  	<artifactId>api_inscripciones</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
-  	<name>api_usuarios</name>
+  	<name>api_inscripciones</name>
   	<description>Demo project for Spring Boot</description>
 
   	<properties>
