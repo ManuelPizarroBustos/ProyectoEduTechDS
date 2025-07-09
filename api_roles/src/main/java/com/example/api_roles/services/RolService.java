@@ -35,7 +35,8 @@ public class RolService{
         try {
             Rol nuevoRol = new Rol();
             nuevoRol.setId(rol.getId());
-            nuevoRol.setNombre(rol.getNombre());
+            nuevoRol.setNombreRol(rol.getNombreRol());
+            nuevoRol.setDescripcion(rol.getDescripcion());
 
             return rolRepository.save(nuevoRol);
         } catch (Exception e) {
@@ -49,12 +50,12 @@ public class RolService{
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Rol no encontrado");
         }
 
-        if(body.getNombre() != null) {
-            rol.setNombre(body.getNombre());
+        if(body.getNombreRol() != null) {
+            rol.setNombreRol(body.getNombreRol());
         }
 
-        if(body.getEmail() != null) {
-            rol.setEmail(body.getEmail());
+        if(body.getDescripcion() != null) {
+            rol.setDescripcion(body.getDescripcion());
         }
         
     

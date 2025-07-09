@@ -35,10 +35,10 @@ public class ContenidoService{
         try {
             Contenido nuevoContenido = new Contenido();
             nuevoContenido.setId(contenido.getId());
-            nuevoContenido.setNombre(contenido.getNombre());
-            nuevoContenido.setTelefono(contenido.getTelefono());
-            nuevoContenido.setPassword(contenido.getPassword());
-            nuevoContenido.setIdRol(contenido.getIdRol());
+            nuevoContenido.setTitulo(contenido.getTitulo());
+            nuevoContenido.setTipo(contenido.getTipo());
+            nuevoContenido.setUrlRecurso(contenido.getUrlRecurso());
+            nuevoContenido.setIdCurso(contenido.getIdCurso());
 
             return contenidoRepository.save(nuevoContenido);
         } catch (Exception e) {
@@ -52,20 +52,20 @@ public class ContenidoService{
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Contenido no encontrado");
         }
 
-        if(body.getNombre() != null) {
-            contenido.setNombre(body.getNombre());
+        if(body.getTitulo() != null) {
+            contenido.setTitulo(body.getTitulo());
         }
 
-        if(body.getTelefono() != null) {
-            contenido.setTelefono(body.getTelefono());
+        if(body.getTipo() != null) {
+            contenido.setTipo(body.getTipo());
         }
 
-        if(body.getPassword() != null) {
-            contenido.setPassword(body.getPassword());
+        if(body.getUrlRecurso() != null) {
+            contenido.setUrlRecurso(body.getUrlRecurso());
         }
         
-        if(body.getIdRol() != null) {
-            contenido.setIdRol(body.getIdRol());
+        if(body.getIdCurso() != null) {
+            contenido.setIdCurso(body.getIdCurso());
         }
     
         return contenidoRepository.save(contenido);
