@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class EvaluacionCreate {
     
-    @NotBlank
+    
     private int id; 
 
     @NotBlank
@@ -14,9 +14,9 @@ public class EvaluacionCreate {
     @NotBlank
     private String descripcion;
     
-    @NotBlank
+    
     private Integer idUsuario;        
 
-    @NotBlank
+    
     private Integer idCurso; 
 }

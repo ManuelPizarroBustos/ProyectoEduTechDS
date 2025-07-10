@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class CursoCreate {
     
-    @NotBlank
+    
     private int id;
 
     @NotBlank
@@ -17,6 +17,6 @@ public class CursoCreate {
     @NotBlank
     private String categoria;
 
-    @NotBlank
+    
     private Integer idInstructor;   
 }

@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class InstructorCreate {
     
-    @NotBlank
+    
     private int id; 
 
     @NotBlank

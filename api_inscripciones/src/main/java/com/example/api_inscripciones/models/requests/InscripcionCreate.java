@@ -5,13 +5,13 @@ import lombok.Data;
 @Data
 public class InscripcionCreate {
     
-    @NotBlank
+    
     private int id;
 
-    @NotBlank
+    
     private Integer usuarioId;
     
-    @NotBlank
+    
     private Integer cursoId;
 
     @NotBlank

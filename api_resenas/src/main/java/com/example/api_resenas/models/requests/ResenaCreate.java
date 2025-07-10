@@ -5,16 +5,16 @@ import lombok.Data;
 @Data
 public class ResenaCreate {
     
-    @NotBlank
+    
     private int id; 
 
-    @NotBlank
+    
     private Integer idUsuario;
     
-    @NotBlank
+    
     private Integer idCurso;    
 
-    @NotBlank
+    
     private Integer calificacion;
     
     @NotBlank

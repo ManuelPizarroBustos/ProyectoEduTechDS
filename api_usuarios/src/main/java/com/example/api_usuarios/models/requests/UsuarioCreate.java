@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class UsuarioCreate {
     
-    @NotBlank
+    
     private int id; 
 
     @NotBlank
@@ -22,6 +22,6 @@ public class UsuarioCreate {
     @NotBlank
     private String password;        
 
-    @NotBlank
+    
     private Integer idRol; 
 }

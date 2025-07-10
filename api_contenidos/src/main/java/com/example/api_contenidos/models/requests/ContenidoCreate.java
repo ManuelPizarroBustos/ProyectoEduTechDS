@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class ContenidoCreate {
     
-    @NotBlank
+    
     private int id; 
 
     @NotBlank
@@ -17,6 +17,6 @@ public class ContenidoCreate {
     @NotBlank
     private String urlRecurso;        
 
-    @NotBlank
+    
     private Integer idCurso; 
 }
