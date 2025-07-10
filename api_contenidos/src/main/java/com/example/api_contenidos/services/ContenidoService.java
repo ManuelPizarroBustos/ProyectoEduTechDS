@@ -1,4 +1,4 @@
-package main.java.com.example.api_contenidos.services;
+package com.example.api_contenidos.services;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class ContenidoService{
     }
 
 
-    public Contenido registrar(ContenidoCreate usuario){
+    public Contenido registrar(ContenidoCreate contenido){
         try {
             Contenido nuevoContenido = new Contenido();
             nuevoContenido.setId(contenido.getId());

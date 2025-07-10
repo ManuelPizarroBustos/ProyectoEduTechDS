@@ -1,4 +1,4 @@
-package main.java.com.example.api_instructores.models.requests;
+package com.example.api_instructores.models.requests;
 
 import lombok.Data;
 

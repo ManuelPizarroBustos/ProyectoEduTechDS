@@ -1,4 +1,4 @@
-package main.java.com.example.api_evaluaciones.services;
+package com.example.api_evaluaciones.services;
 
 import java.util.List;
 

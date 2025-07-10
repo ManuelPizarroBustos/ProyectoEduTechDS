@@ -1,5 +1,4 @@
-package main.java.com.example.api_evaluaciones.models.requests;
-import jakarta.validation.constraints.Email;
+package com.example.api_evaluaciones.models.requests;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 

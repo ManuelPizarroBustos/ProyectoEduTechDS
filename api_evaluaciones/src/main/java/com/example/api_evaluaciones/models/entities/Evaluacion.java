@@ -1,4 +1,4 @@
-package main.java.com.example.api_evaluaciones.models.entities;
+package com.example.api_evaluaciones.models.entities;
 
 
 import jakarta.persistence.*;

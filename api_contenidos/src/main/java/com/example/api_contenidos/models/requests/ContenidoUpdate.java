@@ -1,4 +1,4 @@
-package main.java.com.example.api_contenidos.models.requests;
+package com.example.api_contenidos.models.requests;
 
 import lombok.Data;
 

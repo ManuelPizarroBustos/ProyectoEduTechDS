@@ -1,4 +1,4 @@
-package main.java.com.example.api_instructores.services;
+package com.example.api_instructores.services;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package main.java.com.example.api_roles.assemblers;
+package com.example.api_roles.assemblers;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 

@@ -1,4 +1,4 @@
-package main.java.com.example.api_evaluaciones.controllers;
+package com.example.api_evaluaciones.controllers;
 
 import java.util.List;
 import java.util.stream.Collectors;

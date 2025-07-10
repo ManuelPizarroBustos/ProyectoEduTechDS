@@ -1,4 +1,4 @@
-package main.java.com.example.api_contenidos.assemblers;
+package com.example.api_contenidos.assemblers;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 

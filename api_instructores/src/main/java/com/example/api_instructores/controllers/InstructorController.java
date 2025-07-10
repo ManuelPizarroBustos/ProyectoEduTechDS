@@ -1,4 +1,4 @@
-package main.java.com.example.api_instructores.controllers;
+package com.example.api_instructores.controllers;
 
 import java.util.List;
 import java.util.stream.Collectors;

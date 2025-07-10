@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ApiInstructoresApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_instructores.ApiInstructoresApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "ApiUsuariosApplication",
             "request": "launch",
             "mainClass": "com.example.api_usuarios.ApiUsuariosApplication",
