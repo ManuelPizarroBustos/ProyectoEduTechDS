@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ApiContenidosApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_contenidos.ApiContenidosApplication",
+            "projectName": "api_contenidos"
+        },
+        {
+            "type": "java",
+            "name": "ApiCursosApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_cursos.ApiCursosApplication",
+            "projectName": "api_cursos"
+        },
+        {
+            "type": "java",
+            "name": "ApiEvaluacionesApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_evaluaciones.ApiEvaluacionesApplication",
+            "projectName": "api_evaluaciones"
+        },
+        {
+            "type": "java",
+            "name": "ApiInscripcionesApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_inscripciones.ApiInscripcionesApplication",
+            "projectName": "api_inscripciones"
+        },
+        {
+            "type": "java",
+            "name": "ApiProveedoresApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_proveedores.ApiProveedoresApplication",
+            "projectName": "api_proveedores"
+        },
+        {
+            "type": "java",
+            "name": "ApiResenasApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_resenas.ApiResenasApplication",
+            "projectName": "api_resenas"
+        },
+        {
+            "type": "java",
+            "name": "ApiRolesApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_roles.ApiRolesApplication",
+            "projectName": "api_roles"
+        },
+        {
+            "type": "java",
+            "name": "ApiTicketsApplication",
+            "request": "launch",
+            "mainClass": "com.example.api_tickets.ApiTicketsApplication",
+            "projectName": "api_tickets"
+        },
+        {
+            "type": "java",
             "name": "ApiInstructoresApplication",
             "request": "launch",
             "mainClass": "com.example.api_instructores.ApiInstructoresApplication",
