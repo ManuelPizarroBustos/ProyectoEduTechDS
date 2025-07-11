@@ -1,4 +1,4 @@
-package com.example.api_usuarios.swagger;
+package com.example.api_evaluaciones.swagger;
 
 
 import org.springframework.context.annotation.Bean;
@@ -16,8 +16,8 @@ public class OpenApiSecurityConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Usuarios")
+                        .title("API de Evaluaciones")
                         .version("1.0")
-                        .description("Documentación de la API de Usuarios"));
+                        .description("Documentación de la API de Evaluaciones"));
     }
 }
